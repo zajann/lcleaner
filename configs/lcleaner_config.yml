@@ -1,0 +1,15 @@
+process:
+  pidfilepath: /usr/local/lcleaner/bin
+  pidfilename: lcleaner.pid
+
+log:
+  filepath: /usr/local/lcleaner/log
+  filename: lcleaner.log
+  level: 0
+  maxsize: 10
+
+targets:
+    - mydaemon:
+      path: /usr/local/mydaemon/log
+      regexp: mydaemon.log.bak.[0-9]+
+      period: 1m

@@ -1,0 +1,31 @@
+log:
+  filepath: /usr/local/nvpmon/lcleaner/log
+  filename: lcleaner.log
+  level: 0
+  maxsize: 10
+
+targets:
+    - nvpmon_snmp:
+      path: /usr/local/nvpmon/nvpmon_snmp/log
+      regexp: nvpmon_snmp.log.bak.[0-9]+
+      period: 1m      
+
+    - nvpmon_judge:
+      path: /usr/local/nvpmon/nvpmon_judge/log
+      regexp: nvpmon_judge.log.bak.[0-9]+
+      period: 1m
+
+    - nvpmon_ssh:
+      path: /usr/local/nvpmon/nvpmon_jssh/log
+      regexp: nvpmon_ssh.log.bak.[0-9]+
+      period: 1m
+
+    - nvpmon_tap:
+      path: /usr/local/nvpmon/nvpmon_tap/log
+      regexp: nvpmon_tap.log.bak.[0-9]+
+      period: 1m
+
+    - nvptserver:
+      path: /usr/local/nvpmon/nvptserver/log
+      regexp: nvptserver.log.bak.[0-9]+
+      period: 1m
