@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Source .bash_profile of root
-. /root/.bash_profile
+. $HOME/.bash_profile
 
 RETVAL=0
 PROG="lcleaner"
