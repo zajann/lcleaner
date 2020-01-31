@@ -29,6 +29,7 @@ After installation if you move `<YOUR-LCLEANER-DIR`, you can see 3 directories b
 - **Set up**
 
   Open the `etc/lcleaner_config.yml` and rewrite
+
   ![](screen/screenshot_config.PNG)
 
   - process
@@ -45,7 +46,7 @@ After installation if you move `<YOUR-LCLEANER-DIR`, you can see 3 directories b
     `period`: storage period, you can set the period to days, months, years 
     (ex. 7d => 7 days | 6m => 6 months | 1y => 1 year)
 
-- **Test **
+- **Test**
 
   You can test if the regexp you set really match with target log files format or not before running.
 
